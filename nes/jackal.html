@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta name="title" content="Jackal">
+    <meta name="description" content="free retro games jackal battle city contra mario green beret nintendo nes entertainment system">
+    <meta name="keywords" content="free, retro, games, jackal, battle, city, tank, system, entertainment, nintendo, nes, game">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="icon" href="../favicon.gif">
+    <meta charset="UTF-8">
+    <title>Jackal</title>
+    <link href="../style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Jackal</h1>
+    <div style='width:640px;height:480px;max-width:100%'>
+        <div id='game'></div>
+    </div>
+    <br>
+    <button onclick="About()">About</button>
+    <p id="About"></p>
+    <a href="index.html">Home</a>
+
+</div>
+
+<script>
+    function About() {
+        if (document.getElementById("About").innerHTML == " ") {
+            document.getElementById("About").innerHTML = "Plot:\n" +
+                "Infrared satellites have spotted dozens of American POWs trapped on enemy soil. Missing for years but never forgotten, these men must be brought home. The only hope is a small-scale commando raid – code name JACKAL. The President has turned to the Green Berets and their Jeep Squad, 20 all-terrain, combat ready, tactical, super mobile, all-wheel drive attack jeeps, each equipped with a driver and gunner. Because of the secrecy of the mission, only 40 of the most cunning and brave Green Berets have been chosen. You have qualified. Be proud and save the life of each and every American POW.\n" +
+                "Your mission begins when you and your faithful jeep, Trigger, are parachuted along the fringes of the Cambodian border, where you scratch through six deadly enemy territories, rescuing POWs while encountering heavy fire from tank patrols, cannon bunkers, bomber squadrons, and a hostile navy. You have a machine gun, grenades, and bazookas (obtained from power-ups) You have three jeeps at the beginning of Operation Jackal, and gain extras after rescuing more POWs. Two players can play. Your mission ends when you destroy the enemy’s main fortress (Zulu) at the end of level 6.\n" +
+                "\n" + "<hr>" +
+                "Controls:\n" +
+                "Use the D-pad to steer. Press B to fire the machine gun. Press A to launch grenades or the bazooka. Use select to choose one or two-player mode. Use start to begin and pause. \n"
+        } else {
+            document.getElementById("About").innerHTML = " "
+        }
+    }
+</script>
+
+<script type='text/javascript'>
+    EJS_player = '#game';
+    // Can also be fceumm or nestopia
+    EJS_core = 'nes';
+    // Lightgun
+    EJS_lightgun = false; // can be true or false
+    // URL to BIOS file
+    EJS_biosUrl = ''; // https://dl.dropboxusercontent.com/s/[random-code]/bios.bin
+    // URL to Game rom
+    EJS_gameUrl = '../roms/nes/jackal.nes'; // https://dl.dropboxusercontent.com/s/[random-code]/mario.nes
+    // Path to the data directory
+    EJS_pathtodata = '../data/';
+</script>
+
+<script src='../data/loader.js'></script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta name="title" content="Contra">
+    <meta name="description" content="free retro games battle city contra mario green beret nintendo nes entertainment system">
+    <meta name="keywords" content="free, retro, games, battle, city, tank, system, entertainment, nintendo, nes, game">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="icon" href="../favicon.gif">
+    <meta charset="UTF-8">
+    <title>Contra</title>
+    <link href="../style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Contra</h1>
+    <div style='width:640px;height:480px;max-width:100%'>
+        <div id='game'></div>
+    </div>
+    <br>
+    <button onclick="About()">About</button>
+    <p id="About"></p>
+    <a href="index.html">Home</a>
+
+</div>
+
+<script>
+    function About() {
+        if (document.getElementById("About").innerHTML == " ") {
+            document.getElementById("About").innerHTML = "In Contra, the player controls one of two armed military commandos named Bill 'Mad Dog' Rizer and Lance 'Scorpion' Bean, who are sent on a mission to neutralize a terrorist group called the Red Falcon Organization that is planning to take over the Earth." +
+                "\n" + "<hr>" +
+                "The controls consist of an eight-way joystick and two action buttons for shooting (left) and jumping (right). When one of the protagonists jumps, he curls into a somersault instead of doing a conventional jump like in other games. The joystick controls not only the player's movement while running and jumping, but also his aiming. During side view stages, the player can shoot leftward, rightward or upward while standing, as well as horizontally and diagonally while running. The player can also shoot in any of eight directions, including downwards, while jumping. Pressing the joystick downwards while standing will cause the character to lie down on his stomach, allowing him to avoid enemy fire and shoot low targets. When the jump button is pressed while crouching on a higher platform, the character will drop down to a lower level.\n" +
+                "\n" +"<hr>" +
+                "The player's default weapon is a rifle with unlimited ammunition. Upgrades are obtained by destroying the pill box sensors and flying item capsules containing them, which drop F (fire), S (spray), R (rapid fire), B (barrier), L (laser), M (machine gun), and a falcon-shaped power up that kills all enemies on screen."
+                + "\n" + "<hr>" +
+                "There are eight stages: jungle, base 1, waterfall, base 2, snow field, energy zone, hangar, and alien lair."
+        } else {
+            document.getElementById("About").innerHTML = " "
+        }
+    }
+</script>
+
+<script type='text/javascript'>
+    EJS_player = '#game';
+    // Can also be fceumm or nestopia
+    EJS_core = 'nes';
+    // Lightgun
+    EJS_lightgun = false; // can be true or false
+    // URL to BIOS file
+    EJS_biosUrl = ''; // https://dl.dropboxusercontent.com/s/[random-code]/bios.bin
+    // URL to Game rom
+    EJS_gameUrl = '../roms/nes/contra.nes'; // https://dl.dropboxusercontent.com/s/[random-code]/mario.nes
+    // Path to the data directory
+    EJS_pathtodata = '../data/';
+</script>
+
+<script src='../data/loader.js'></script>
+
+</body>
+
+</html>

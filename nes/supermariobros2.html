@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta name="title" content="Super Mario Bros. 2">
+    <meta name="description" content="free retro games Super Mario Bros battle city contra mario green beret nintendo nes entertainment system">
+    <meta name="keywords" content="free, retro, games, Super Mario Bros, battle, city, tank, system, entertainment, nintendo, nes, game">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="icon" href="../favicon.gif">
+    <meta charset="UTF-8">
+    <title>Super Mario Bros. 2</title>
+    <link href="../style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Super Mario Bros. 2</h1>
+    <div style='width:640px;height:480px;max-width:100%'>
+        <div id='game'></div>
+    </div>
+    <br>
+    <button onclick="About()">About</button>
+    <p id="About"></p>
+    <a href="index.html">Home</a>
+
+</div>
+
+<script>
+    function About() {
+        if (document.getElementById("About").innerHTML == " ") {
+            document.getElementById("About").innerHTML = "One evening, Mario had a strange dream. \n" +
+                "He dreamt of a long, long staircase leading up to a door. As soon as the door opened, he was confronted with a world he had never seen before spreading out as far as his eyes could see. When he strained his ears to listen, he heard a faint voice saying \n" +
+                "\"Welcome to 'Subcon', the land of dreams. We have been cursed by Wart and we are completely under his evil spell. We have been awaiting your arrival. Please defeat Wart and return Subcon to its natural state. The curse Wart has put on you in the real world will not have any effect upon you here. Remember, Wart hates vegetables. Please help us!\"\n" +
+                "At the same time this was heard, a bolt of lightning flashed before Mario's eyes. Stunned, Mario lost his footing and tumbled upside down. He awoke with a start to find himself sitting up in his bed. To clear his head, Mario talked to Luigi, Toad and Princess about the strange dream he had. \n" +
+                "They decide to go to a nearby mountain for a picnic. \n" +
+                "After arriving at the picnic area and looking at the scenery, they see a small cave nearby. When they enter this cave, to their great surprise, there's a stairway leading up, up and up. It is exactly like the one Mario saw in his dream. They all walk together up the stairs and at the top, find a door just like the one in Mario's dream. When Mario and his friends, in fear, open the door, to their surprise, the world that he saw in his dream spreads out before them! <hr> This game is comprised of 20 areas in 7 worlds. There is a miniboss at the end of each area. The big boss, Wart, is waiting for you at the end of the final area. Mario is a good all-rounder. Luigi can jump high and far. Toad is the strongest. Princess Toadstool can float when you hold A and can run the fastest when she holds things. You become small if your life meter reaches one, and lose a life if it reaches zero. " +
+                "\n" + "<hr>" +
+                "Controls:\n" +
+                "Use left and right on the D-pad to move left and right. Use up and down on the D-pad to climb. Press A to jump while standing still. Do a longer jump while running, and do a power squat jump while holding A. Use B to lift stuff and press it again to throw. You can throw things at enemies to attack them. Press B while walking to run. Press the up arrow to open doors."
+        } else {
+            document.getElementById("About").innerHTML = " "
+        }
+    }
+</script>
+
+<script type='text/javascript'>
+    EJS_player = '#game';
+    // Can also be fceumm or nestopia
+    EJS_core = 'nes';
+    // Lightgun
+    EJS_lightgun = false; // can be true or false
+    // URL to BIOS file
+    EJS_biosUrl = ''; // https://dl.dropboxusercontent.com/s/[random-code]/bios.bin
+    // URL to Game rom
+    EJS_gameUrl = '../roms/nes/supermariobros2.nes'; // https://dl.dropboxusercontent.com/s/[random-code]/mario.nes
+    // Path to the data directory
+    EJS_pathtodata = '../data/';
+</script>
+
+<script src='../data/loader.js'></script>
+
+</body>
+
+</html>

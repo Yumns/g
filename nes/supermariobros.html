@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta name="title" content="Super Mario Bros">
+    <meta name="description" content="free retro games Super Mario Bros battle city contra mario green beret nintendo nes entertainment system">
+    <meta name="keywords" content="free, retro, games, Super Mario Bros, battle, city, tank, system, entertainment, nintendo, nes, game">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="icon" href="../favicon.gif">
+    <meta charset="UTF-8">
+    <title>Super Mario Bros</title>
+    <link href="../style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Super Mario Bros.</h1>
+    <div style='width:640px;height:480px;max-width:100%'>
+        <div id='game'></div>
+    </div>
+    <br>
+    <button onclick="About()">About</button>
+    <p id="About"></p>
+    <a href="index.html">Home</a>
+
+</div>
+
+<script>
+    function About() {
+        if (document.getElementById("About").innerHTML == " ") {
+            document.getElementById("About").innerHTML = "There are eight levels in the Mushroom Kingdom, each divided into four stages. The fourth areas all end in a big castle, where the Princess, as well as her mushroom retainers are being held by the turtle tribe. Mario has to rescue the Princess before the timer runs out. Along the way are mountains, pits, seas, turtle soldiers, enemies, and a host of traps and riddles. Whether or not you can make it to the last castle and free the Princess depends on you!\n" +
+                "If Mario picks up a 1 up mushroom, he grains a life. If he picks up 100 coins, he gains a life. In addition, he can obtain power ups, such as the magic mushroom, fire flower, and starman. If he is hit by enemies while having a power up, Mario shrinks into his normal state. Jumping on a Koopa Troopa makes him stay motionless; he can be kicked away to knock down other enemies. \n" +
+                "\n" + "<hr>" +
+                "Controls:\n" +
+                "Use left and right to walk. Use the down button to crouch. Press A to jump and swim (press the button for longer to jump higher. Press B while walking to speed up and jump higher. After you pick up the fire flower, you can tap B to throw fireballs. Use the select button to choose 1 or 2 player mode. Press start to start and pause. \n"
+        } else {
+            document.getElementById("About").innerHTML = " "
+        }
+    }
+</script>
+
+<script type='text/javascript'>
+    EJS_player = '#game';
+    // Can also be fceumm or nestopia
+    EJS_core = 'nes';
+    // Lightgun
+    EJS_lightgun = false; // can be true or false
+    // URL to BIOS file
+    EJS_biosUrl = ''; // https://dl.dropboxusercontent.com/s/[random-code]/bios.bin
+    // URL to Game rom
+    EJS_gameUrl = '../roms/nes/supermariobros.nes'; // https://dl.dropboxusercontent.com/s/[random-code]/mario.nes
+    // Path to the data directory
+    EJS_pathtodata = '../data/';
+</script>
+
+<script src='../data/loader.js'></script>
+
+</body>
+
+</html>

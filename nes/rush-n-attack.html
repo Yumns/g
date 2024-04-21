@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta name="title" content="Rush 'N Attack">
+    <meta name="description" content="free retro games jackal battle city contra mario green beret nintendo nes entertainment system">
+    <meta name="keywords" content="free, retro, games, jackal, battle, city, tank, system, entertainment, nintendo, nes, game">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="icon" href="../favicon.gif">
+    <meta charset="UTF-8">
+    <title>Rush 'N Attack</title>
+    <link href="../style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Rush 'N Attack</h1>
+    <div style='width:640px;height:480px;max-width:100%'>
+        <div id='game'></div>
+    </div>
+    <br>
+    <button onclick="About()">About</button>
+    <p id="About"></p>
+    <a href="index.html">Home</a>
+
+</div>
+
+<script>
+    function About() {
+        if (document.getElementById("About").innerHTML == " ") {
+            document.getElementById("About").innerHTML = "Plot: \n" +
+                "Deep behind enemy lines, dozens of American POWs are being held inside a heavily armed base. Your mission is to free the captives and destroy the base., To get there, you have to make your way through the six deadly styages: iron bridge and missile base, airport, harbor, forest and airshed, warehouse, and enemy base. Move toward the right, killing enemies, dodging their fire, and getting their weapons. Each stage ends with the death of the bos…or you. Two player mode is available.\n" +
+                "\n" + "<hr>" +
+                "Controls:\n" +
+                "Move left and right with the D-pad. Jump or climb by moving the D-pad up. Lie down or climb down by moving the D-pad down. Use B to attack and A to use power ups (bazooka, grenade, pistol, shield). Use select to choose 1 or 2 player modes and press start to begin and pause. \n"
+        } else {
+            document.getElementById("About").innerHTML = " "
+        }
+    }
+</script>
+
+<script type='text/javascript'>
+    EJS_player = '#game';
+    // Can also be fceumm or nestopia
+    EJS_core = 'nes';
+    // Lightgun
+    EJS_lightgun = false; // can be true or false
+    // URL to BIOS file
+    EJS_biosUrl = ''; // https://dl.dropboxusercontent.com/s/[random-code]/bios.bin
+    // URL to Game rom
+    EJS_gameUrl = '../roms/nes/rushnattack.nes'; // https://dl.dropboxusercontent.com/s/[random-code]/mario.nes
+    // Path to the data directory
+    EJS_pathtodata = '../data/';
+</script>
+
+<script src='../data/loader.js'></script>
+
+</body>
+
+</html>

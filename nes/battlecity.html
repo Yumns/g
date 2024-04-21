@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta name="title" content="Battle City">
+    <meta name="description" content="free retro games battle city contra mario green beret nintendo nes entertainment system">
+    <meta name="keywords" content="free, retro, games, battle, city, tank, system, entertainment, nintendo, nes, game">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="icon" href="../favicon.gif">
+    <meta charset="UTF-8">
+    <title>Battle City</title>
+    <link href="../style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Battle City</h1>
+    <div style='width:640px;height:480px;max-width:100%'>
+        <div id='game'></div>
+    </div>
+    <br>
+    <button onclick="About()">About</button>
+    <p id="About"></p>
+    <a href="index.html">Home</a>
+
+</div>
+
+<script>
+    function About() {
+        if (document.getElementById("About").innerHTML == " ") {
+            document.getElementById("About").innerHTML = "You control a tank and shoot projectiles to destroy enemy tanks around the playfield. Enemy tanks enter from the top of the screen and attempt to destroy the player's base (represented by a phoenix symbol) and the player's tank. A level is completed when the player destroys 20 enemy tanks, but the game ends if the player's base is destroyed or the player loses all available lives. Note that the player can destroy the base as well, so the player can still lose even after all enemy tanks are destroyed.\n" +
+                "\n" + "<hr>" +
+                "Battle City contains 35 different stages that are 13 units wide by 13 units high. Each map contains different types of terrain and obstacles, such as brick walls that can be destroyed by shooting at them, steel walls that can be destroyed by the player if they have collected three stars, bushes that hide tanks under them, ice fields that make it difficult to control the tank, and patches of water which cannot be crossed. The game becomes more challenging in later levels, as enemy tanks may act as decoys to lure players away from their base so that another tank can destroy it. In addition, flashing red tanks releases a random power-up when destroyed. There are several types of power-ups, such as a clock that stops all enemies, a protective shield, and a bomb that eliminates all on-screen enemies. Enemy tanks come in four different sizes, the largest one requiring four shots to destroy."
+        } else {
+            document.getElementById("About").innerHTML = " "
+        }
+    }
+</script>
+
+<script type='text/javascript'>
+    EJS_player = '#game';
+    // Can also be fceumm or nestopia
+    EJS_core = 'nes';
+    // Lightgun
+    EJS_lightgun = false; // can be true or false
+    // URL to BIOS file
+    EJS_biosUrl = ''; // https://dl.dropboxusercontent.com/s/[random-code]/bios.bin
+    // URL to Game rom
+    EJS_gameUrl = '../roms/nes/battlecity.nes'; // https://dl.dropboxusercontent.com/s/[random-code]/mario.nes
+    // Path to the data directory
+    EJS_pathtodata = '../data/';
+</script>
+
+<script src='../data/loader.js'></script>
+
+</body>
+
+</html>

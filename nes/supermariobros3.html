@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta name="title" content="Super Mario Bros. 3">
+    <meta name="description" content="free retro games Super Mario Bros battle city contra mario green beret nintendo nes entertainment system">
+    <meta name="keywords" content="free, retro, games, Super Mario Bros, battle, city, tank, system, entertainment, nintendo, nes, game">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="icon" href="../favicon.gif">
+    <meta charset="UTF-8">
+    <title>Super Mario Bros. 3</title>
+    <link href="../style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Super Mario Bros. 3</h1>
+    <div style='width:640px;height:480px;max-width:100%'>
+        <div id='game'></div>
+    </div>
+    <br>
+    <button onclick="About()">About</button>
+    <p id="About"></p>
+    <a href="index.html">Home</a>
+
+</div>
+
+<script>
+    function About() {
+        if (document.getElementById("About").innerHTML == " ") {
+            document.getElementById("About").innerHTML = "Plot: \n" +
+                "The Mushroom Kingdom has been a peaceful place thanks to the brave deeds of Mario and Luigi. The Mushroom Kingdom forms an entrance to the Mushroom World where all is not well.\n" +
+                "Bowser has sent his 7 children to make mischief as they please in the normally peaceful Mushroom World. They stole royal magic wands from each country in the Mushroom World and used them to turn their kings into animals.\n" +
+                "Mario and Luigi must recover the royal magic wands from Bowser's 7 kids to return the kings to their true forms. \"Goodbye and good luck!\", said the Princess and Toad as Mario and Luigi set off on their journey deep into the Mushroom World.\n" +
+                "\n" + "<hr>" +
+                "Controls:\n" +
+                "Use left and right to walk. Use the down button to crouch, enter pipes, and slide down ground slopes. Use the up button to enter doors or, with A pressed, jump out of water and enter upside down pipes. Press A alone to jump and swim. Repeatedly press the A button for tanooki mario to fly. Use B to run, pick up shells, wag Tanooki Mario’s tail or turn him into a statue, and pick up shells. Use select to move the cursor and start to begin or pause. \n"
+
+        } else {
+            document.getElementById("About").innerHTML = " "
+        }
+    }
+</script>
+
+<script type='text/javascript'>
+    EJS_player = '#game';
+    // Can also be fceumm or nestopia
+    EJS_core = 'nes';
+    // Lightgun
+    EJS_lightgun = false; // can be true or false
+    // URL to BIOS file
+    EJS_biosUrl = ''; // https://dl.dropboxusercontent.com/s/[random-code]/bios.bin
+    // URL to Game rom
+    EJS_gameUrl = '../roms/nes/supermariobros3.nes'; // https://dl.dropboxusercontent.com/s/[random-code]/mario.nes
+    // Path to the data directory
+    EJS_pathtodata = '../data/';
+</script>
+
+<script src='../data/loader.js'></script>
+
+</body>
+
+</html>
