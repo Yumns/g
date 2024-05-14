@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta name="title" content="Dig Dug">
+    <meta name="description" content="free retro games battle city contra mario green beret nintendo nes entertainment system">
+    <meta name="keywords" content="free, retro, games, battle, city, tank, system, entertainment, nintendo, nes, game">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="icon" href="../favicon.gif">
+    <meta charset="UTF-8">
+    <title>Dig Dug</title>
+    <link href="../style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Dig Dug</h1>
+    <div style='width:640px;height:480px;max-width:100%'>
+        <div id='game'></div>
+    </div>
+    <br>
+    <button onclick="About()">About</button>
+    <p id="About"></p>
+    <a href="../index.html">Home</a>
+
+</div>
+
+<script>
+    function About() {
+        if (document.getElementById("About").innerHTML == " ") {
+            document.getElementById("About").innerHTML = "Gameplay\n" +
+                "At the beginning of the game, Dig Dug burrows his way to the center of the earth. Once he's there, you control him with the hand controller Disc. Dig your own tunnels, or break into existing ones. Stun or explode monsters with your air gun, or drop rocks on them. When no monsters are left on screen, the game continues at the next level, harder than before!\n" +
+                "\n" +
+                "Monsters\n" +
+                "There are two types of monsters; Pooka and Fygar. They are easy to tell apart since Fygar breathes fire. If you are in the same tunnel with them, they'll attack. If they catch you, your turn is over!\n" +
+                "If you don't go after them quickly, watch out, because they will come after you! Pooka and Fygar cannot dig tunnels, but they can become GHOSTS and pass right through the ground, directly toward YOU! Once they pass into a tunnel, they again become solid.\n" +
+                "\n" +
+                "Air gun\n" +
+                "So how can you defend yourself? Your main weapon is your air gun. Press any SIDE ACTION KEY to shoot your air hose in the direction you are facing. If you hit a monster, keep pressing a SIDE ACTION KEY to inflate him. You can pump the key a couple of times to stun the monster, letting you walk right past him, or you can keep pumping or hold the key down to inflate the monster until he pops.\n" +
+                "\n" +
+                "Rocks\n" +
+                "Another way to stop a monster is to drop a rock on him. Tunnel underneath a rock when a monster is chasing you. If you're tunneling upward, make a sharp turn just before you reach the rock and let it fall on him! If you're tunneling sideways, time it so that the rock falls just as the monster runs underneath. \n" +
+                "With good timing you can drop a rock on two or more monsters for big points! You can even drop a rock on a monster while he is a ghost! Be careful! You can accidentally drop a rock on you!\n" +
+                "\n" +
+                "Vegetables\n" +
+                "Now and then, a vegetable will appear in the center of the earth for several seconds. Gobble it for extra points!\n" +
+                "\n" +
+                "Higher Levels\n" +
+                "When no monsters are left on the screen, the round is over. The game continues with new monsters at a more difficult level. The round number is shown in the upper right corner. \n" +
+                "\n" +
+                "Points \n" +
+                "You earn an extra turn at 10,000 points, 40,000 points, and every 40,000 points thereafter. Each extra turn you earn adds a helmet at lower left.\n" +
+                "\n" +
+                "Scoring\n" +
+                "Your score is shown in the upper left corner. Your high score so far (since pressing RESET) is shown at the top center. You earn points in the following ways:\n" +
+                "Burrowing: Each chunk of dirt you dig is worth 5 points.\n" +
+                "Popping Monsters: How many points you earn for blowing up\n" +
+                "Pooka and Fygar depends on how deep in the earth you are. On the surface or top layer you earn 200 points. In the middle layer you earn 300 points. In the bottom layer, you earn 500 points.\n" +
+                "Popping Fygar from the Side: Since this is much more dangerous (Fygar breathes fire left and right!), you earn DOUBLE the points listed above.\n" +
+                "Dropping Rocks: The more monsters you hit with one rock, the more points you get! 1,000 for 1 monster, 2,500 for 2 monsters, 4,000 for 3 monsters, and 2,000 points for each one after that!\n" +
+                "\n" +
+                "Picking up Vegetables: The carrot in Round 1 is worth 400 points, the turnip in Round 2 is worth 600, and the mushroom in Round 3 is worth 800. In higher rounds, you will find zucchinis, tomatoes, and other vegetables. How much are they worth? Gobble 'em and find out!\n" +
+                "\n"
+        } else {
+            document.getElementById("About").innerHTML = " "
+        }
+    }
+</script>
+
+<script type='text/javascript'>
+    EJS_player = '#game';
+    // Can also be fceumm or nestopia
+    EJS_core = 'nes';
+    // Lightgun
+    EJS_lightgun = false; // can be true or false
+    // URL to BIOS file
+    EJS_biosUrl = ''; // https://dl.dropboxusercontent.com/s/[random-code]/bios.bin
+    // URL to Game rom
+    EJS_gameUrl = '../roms/nes/digdug.nes'; // https://dl.dropboxusercontent.com/s/[random-code]/mario.nes
+    // Path to the data directory
+    EJS_pathtodata = '../data/';
+</script>
+
+<script src='../data/loader.js'></script>
+
+</body>
+
+</html>
